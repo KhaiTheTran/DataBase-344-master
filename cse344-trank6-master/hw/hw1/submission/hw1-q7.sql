@@ -1,0 +1,1 @@
+select * from MyRestaurants where TimeDistMinfromHouse <= 10;

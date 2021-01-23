@@ -1,0 +1,1 @@
+select NameRestaurant, TimeDistMinfromHouse from MyRestaurants where TimeDistMinfromHouse <= 20 order by NameRestaurant;

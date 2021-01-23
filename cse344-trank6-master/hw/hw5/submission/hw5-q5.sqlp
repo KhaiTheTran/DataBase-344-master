@@ -1,0 +1,32 @@
+SELECT DISTINCT x.name AS mountain , x.height AS height, ccode AS country_code, y.name AS country_name 
+FROM hw5.world w, w.mondial.country y, w.mondial.mountain x, split( x.`-country`, ' ') ccode 
+WHERE y.`-car_code` = ccode
+ORDER BY INT(height) DESC;
+
+--Duration of all jobs: 12.055 sec
+--Result Size: 272 rows
+--First 20 rows:
+
+/*
+{ "country_code": "NEP", "mountain": "Mount Everest", "height": "8848", "country_name": "Nepal" }
+{ "country_code": "TJ", "mountain": "Mount Everest", "height": "8848", "country_name": "China" }
+{ "country_code": "TJ", "mountain": "K2", "height": "8611", "country_name": "China" }
+{ "country_code": "PK", "mountain": "K2", "height": "8611", "country_name": "Pakistan" }
+{ "country_code": "IND", "mountain": "Kangchendzonga", "height": "8586", "country_name": "India" }
+{ "country_code": "NEP", "mountain": "Kangchendzonga", "height": "8586", "country_name": "Nepal" }
+{ "country_code": "NEP", "mountain": "Lhotse", "height": "8516", "country_name": "Nepal" }
+{ "country_code": "TJ", "mountain": "Lhotse", "height": "8516", "country_name": "China" }
+{ "country_code": "NEP", "mountain": "Makalu", "height": "8485", "country_name": "Nepal" }
+{ "country_code": "TJ", "mountain": "Makalu", "height": "8485", "country_name": "China" }
+{ "country_code": "TJ", "mountain": "Cho Oyu", "height": "8188", "country_name": "China" }
+{ "country_code": "NEP", "mountain": "Cho Oyu", "height": "8188", "country_name": "Nepal" }
+{ "country_code": "NEP", "mountain": "Dhaulagiri", "height": "8167", "country_name": "Nepal" }
+{ "country_code": "NEP", "mountain": "Manaslu", "height": "8163", "country_name": "Nepal" }
+{ "country_code": "PK", "mountain": "Nanga Parbat", "height": "8125", "country_name": "Pakistan" }
+{ "country_code": "NEP", "mountain": "Annapurna", "height": "8091", "country_name": "Nepal" }
+{ "country_code": "TJ", "mountain": "Gasherbrum I", "height": "8080", "country_name": "China" }
+{ "country_code": "PK", "mountain": "Gasherbrum I", "height": "8080", "country_name": "Pakistan" }
+{ "country_code": "TJ", "mountain": "Broad Peak", "height": "8051", "country_name": "China" }
+{ "country_code": "PK", "mountain": "Broad Peak", "height": "8051", "country_name": "Pakistan" }
+
+*/ 

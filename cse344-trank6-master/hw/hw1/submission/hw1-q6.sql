@@ -1,0 +1,1 @@
+select * from MyRestaurants where LikeorNot = 1 and date('now', '-3 month') > DateLastVisit;

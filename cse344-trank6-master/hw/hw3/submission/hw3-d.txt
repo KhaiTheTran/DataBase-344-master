@@ -1,0 +1,7 @@
+
+I think it is a good idea to use a DBMS as a service in a public cloud because nowadays, we stored data in the cloud. 
+We need a consistency system like the DBMS because it is useful for group work, high security, 
+easy to maintain data, and prevent lost data. There are a lot of web services which need to connect to data
+, therefore the DBMS is a useful data center. If all of webs in the Internet which has their private data center,
+it will cost a lot of money for maintain, and build the system. The DBMS as a service in a public cloud helps to 
+save a lot of money and a significant a mount of work.

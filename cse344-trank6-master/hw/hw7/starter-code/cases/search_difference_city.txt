@@ -1,0 +1,69 @@
+# user 1
+search "Minneapolis MN" "Dallas/Fort Worth TX" 0 29 20
+quit
+*
+#
+# expected printouts for user 1
+#
+Itinerary 0: 2 flight(s), 152 minutes
+ID: 333271 Day: 29 Carrier: NW Number: 1510 Origin: Minneapolis MN Dest: Omaha NE Duration: 55 Capacity: 8 Price: 809
+ID: 23613 Day: 29 Carrier: AA Number: 1031 Origin: Omaha NE Dest: Dallas/Fort Worth TX Duration: 97 Capacity: 13 Price: 280
+Itinerary 1: 2 flight(s), 153 minutes
+ID: 327470 Day: 29 Carrier: NW Number: 1173 Origin: Minneapolis MN Dest: Omaha NE Duration: 56 Capacity: 4 Price: 209
+ID: 23613 Day: 29 Carrier: AA Number: 1031 Origin: Omaha NE Dest: Dallas/Fort Worth TX Duration: 97 Capacity: 13 Price: 280
+Itinerary 2: 2 flight(s), 153 minutes
+ID: 335516 Day: 29 Carrier: NW Number: 1609 Origin: Minneapolis MN Dest: Des Moines IA Duration: 60 Capacity: 5 Price: 108
+ID: 270846 Day: 29 Carrier: MQ Number: 3722 Origin: Des Moines IA Dest: Dallas/Fort Worth TX Duration: 93 Capacity: 0 Price: 102
+Itinerary 3: 2 flight(s), 154 minutes
+ID: 335516 Day: 29 Carrier: NW Number: 1609 Origin: Minneapolis MN Dest: Des Moines IA Duration: 60 Capacity: 5 Price: 108
+ID: 269612 Day: 29 Carrier: MQ Number: 3678 Origin: Des Moines IA Dest: Dallas/Fort Worth TX Duration: 94 Capacity: 8 Price: 474
+Itinerary 4: 2 flight(s), 155 minutes
+ID: 333832 Day: 29 Carrier: NW Number: 1537 Origin: Minneapolis MN Dest: Kansas City MO Duration: 73 Capacity: 5 Price: 481
+ID: 27447 Day: 29 Carrier: AA Number: 1171 Origin: Kansas City MO Dest: Dallas/Fort Worth TX Duration: 82 Capacity: 0 Price: 588
+Itinerary 5: 2 flight(s), 156 minutes
+ID: 333271 Day: 29 Carrier: NW Number: 1510 Origin: Minneapolis MN Dest: Omaha NE Duration: 55 Capacity: 8 Price: 809
+ID: 25914 Day: 29 Carrier: AA Number: 1109 Origin: Omaha NE Dest: Dallas/Fort Worth TX Duration: 101 Capacity: 17 Price: 881
+Itinerary 6: 2 flight(s), 156 minutes
+ID: 333271 Day: 29 Carrier: NW Number: 1510 Origin: Minneapolis MN Dest: Omaha NE Duration: 55 Capacity: 8 Price: 809
+ID: 27416 Day: 29 Carrier: AA Number: 1170 Origin: Omaha NE Dest: Dallas/Fort Worth TX Duration: 101 Capacity: 12 Price: 130
+Itinerary 7: 2 flight(s), 156 minutes
+ID: 817419 Day: 29 Carrier: DL Number: 1689 Origin: Minneapolis MN Dest: Omaha NE Duration: 59 Capacity: 12 Price: 852
+ID: 23613 Day: 29 Carrier: AA Number: 1031 Origin: Omaha NE Dest: Dallas/Fort Worth TX Duration: 97 Capacity: 13 Price: 280
+Itinerary 8: 2 flight(s), 157 minutes
+ID: 327470 Day: 29 Carrier: NW Number: 1173 Origin: Minneapolis MN Dest: Omaha NE Duration: 56 Capacity: 4 Price: 209
+ID: 25914 Day: 29 Carrier: AA Number: 1109 Origin: Omaha NE Dest: Dallas/Fort Worth TX Duration: 101 Capacity: 17 Price: 881
+Itinerary 9: 2 flight(s), 157 minutes
+ID: 327470 Day: 29 Carrier: NW Number: 1173 Origin: Minneapolis MN Dest: Omaha NE Duration: 56 Capacity: 4 Price: 209
+ID: 27416 Day: 29 Carrier: AA Number: 1170 Origin: Omaha NE Dest: Dallas/Fort Worth TX Duration: 101 Capacity: 12 Price: 130
+Itinerary 10: 2 flight(s), 157 minutes
+ID: 333832 Day: 29 Carrier: NW Number: 1537 Origin: Minneapolis MN Dest: Kansas City MO Duration: 73 Capacity: 5 Price: 481
+ID: 44377 Day: 29 Carrier: AA Number: 1750 Origin: Kansas City MO Dest: Dallas/Fort Worth TX Duration: 84 Capacity: 14 Price: 140
+Itinerary 11: 2 flight(s), 157 minutes
+ID: 333832 Day: 29 Carrier: NW Number: 1537 Origin: Minneapolis MN Dest: Kansas City MO Duration: 73 Capacity: 5 Price: 481
+ID: 39577 Day: 29 Carrier: AA Number: 1599 Origin: Kansas City MO Dest: Dallas/Fort Worth TX Duration: 84 Capacity: 15 Price: 316
+Itinerary 12: 2 flight(s), 159 minutes
+ID: 322765 Day: 29 Carrier: NW Number: 972 Origin: Minneapolis MN Dest: Omaha NE Duration: 62 Capacity: 17 Price: 713
+ID: 23613 Day: 29 Carrier: AA Number: 1031 Origin: Omaha NE Dest: Dallas/Fort Worth TX Duration: 97 Capacity: 13 Price: 280
+Itinerary 13: 2 flight(s), 159 minutes
+ID: 333832 Day: 29 Carrier: NW Number: 1537 Origin: Minneapolis MN Dest: Kansas City MO Duration: 73 Capacity: 5 Price: 481
+ID: 924805 Day: 29 Carrier: NK Number: 913 Origin: Kansas City MO Dest: Dallas/Fort Worth TX Duration: 86 Capacity: 3 Price: 126
+Itinerary 14: 2 flight(s), 159 minutes
+ID: 333832 Day: 29 Carrier: NW Number: 1537 Origin: Minneapolis MN Dest: Kansas City MO Duration: 73 Capacity: 5 Price: 481
+ID: 36947 Day: 29 Carrier: AA Number: 1503 Origin: Kansas City MO Dest: Dallas/Fort Worth TX Duration: 86 Capacity: 11 Price: 223
+Itinerary 15: 2 flight(s), 160 minutes
+ID: 333271 Day: 29 Carrier: NW Number: 1510 Origin: Minneapolis MN Dest: Omaha NE Duration: 55 Capacity: 8 Price: 809
+ID: 10073 Day: 29 Carrier: AA Number: 491 Origin: Omaha NE Dest: Dallas/Fort Worth TX Duration: 105 Capacity: 11 Price: 549
+Itinerary 16: 2 flight(s), 160 minutes
+ID: 333832 Day: 29 Carrier: NW Number: 1537 Origin: Minneapolis MN Dest: Kansas City MO Duration: 73 Capacity: 5 Price: 481
+ID: 45503 Day: 29 Carrier: AA Number: 1801 Origin: Kansas City MO Dest: Dallas/Fort Worth TX Duration: 87 Capacity: 10 Price: 395
+Itinerary 17: 2 flight(s), 160 minutes
+ID: 333832 Day: 29 Carrier: NW Number: 1537 Origin: Minneapolis MN Dest: Kansas City MO Duration: 73 Capacity: 5 Price: 481
+ID: 637367 Day: 29 Carrier: AA Number: 340 Origin: Kansas City MO Dest: Dallas/Fort Worth TX Duration: 87 Capacity: 18 Price: 792
+Itinerary 18: 2 flight(s), 160 minutes
+ID: 817419 Day: 29 Carrier: DL Number: 1689 Origin: Minneapolis MN Dest: Omaha NE Duration: 59 Capacity: 12 Price: 852
+ID: 25914 Day: 29 Carrier: AA Number: 1109 Origin: Omaha NE Dest: Dallas/Fort Worth TX Duration: 101 Capacity: 17 Price: 881
+Itinerary 19: 2 flight(s), 160 minutes
+ID: 817419 Day: 29 Carrier: DL Number: 1689 Origin: Minneapolis MN Dest: Omaha NE Duration: 59 Capacity: 12 Price: 852
+ID: 27416 Day: 29 Carrier: AA Number: 1170 Origin: Omaha NE Dest: Dallas/Fort Worth TX Duration: 101 Capacity: 12 Price: 130
+Goodbye
+*

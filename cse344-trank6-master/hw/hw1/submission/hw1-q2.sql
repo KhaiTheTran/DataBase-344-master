@@ -1,0 +1,1 @@
+create table MyRestaurants (NameRestaurant varchar, Typefood varchar, TimeDistMinfromHouse int, DateLastVisit varchar, LikeorNot int);

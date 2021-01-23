@@ -1,0 +1,31 @@
+SELECT eth.`#text` AS ethnic_group, count(*) AS num_countries, 
+SUM(float(eth.`-percentage`)* float(y.population)) AS total_population 
+FROM hw5.world x, x.mondial.country y, 
+(CASE WHEN is_array( y.ethnicgroups) THEN  y.ethnicgroups
+WHEN is_missing( y.ethnicgroups) THEN [] ELSE [ y.ethnicgroups] END) eth
+GROUP BY  eth.`#text`;
+
+--Duration of all jobs: 0.556 sec
+--Result Size: 262
+--First 20 rows:
+/*{ "num_countries": 3, "total_population": 2.57365664E8, "ethnic_group": "Afar" }
+{ "num_countries": 1, "total_population": 381850.0, "ethnic_group": "African descent" }
+{ "num_countries": 1, "total_population": 1.94090576E8, "ethnic_group": "Afro-Asian" }
+{ "num_countries": 1, "total_population": 3114330.0, "ethnic_group": "Afro-Chinese" }
+{ "num_countries": 4, "total_population": 5.17143328E8, "ethnic_group": "Albanian" }
+{ "num_countries": 6, "total_population": 2.92452608E9, "ethnic_group": "Amerindian" }
+{ "num_countries": 1, "total_population": 4.96215008E8, "ethnic_group": "Amerindian Amerindian" }
+{ "num_countries": 1, "total_population": 2182980.0, "ethnic_group": "Andorran" }
+{ "num_countries": 1, "total_population": 7.0318752E7, "ethnic_group": "Arab Iranian" }
+{ "num_countries": 3, "total_population": 6.7241636E9, "ethnic_group": "Arab-Berber" }
+{ "num_countries": 6, "total_population": 4.03951072E8, "ethnic_group": "Armenian" }
+{ "num_countries": 8, "total_population": 1.31416794E9, "ethnic_group": "Asian" }
+{ "num_countries": 1, "total_population": 1.07111456E8, "ethnic_group": "Assyrian" }
+{ "num_countries": 3, "total_population": 7.3106938E8, "ethnic_group": "Azeri" }
+{ "num_countries": 1, "total_population": 1.0079088E8, "ethnic_group": "Bagisu" }
+{ "num_countries": 1, "total_population": 1.32188528E8, "ethnic_group": "Baloch" }
+{ "num_countries": 1, "total_population": 3.39536224E8, "ethnic_group": "Baoule" }
+{ "num_countries": 1, "total_population": 1.33360632E8, "ethnic_group": "Bashkir" }
+{ "num_countries": 1, "total_population": 1.61265408E8, "ethnic_group": "Basogo" }
+{ "num_countries": 1, "total_population": 680900.0, "ethnic_group": "Basques Bretons" }
+*/

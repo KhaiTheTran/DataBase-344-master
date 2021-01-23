@@ -1,0 +1,10 @@
+SELECT DISTINCT fc.name AS first_country , sc.name AS second_country 
+FROM hw5index.country fc, hw5index.mountain x, hw5index.sea y, 
+hw5index.country sc, hw5index.mountain x1, hw5index.sea y1, 
+split( x.`-country`, ' ') mcode,  split( x1.`-country`, ' ') mcode1, 
+split( y.`-country`, ' ') scode,  split( y1.`-country`, ' ') scode1    
+WHERE fc.`-car_code` = mcode AND scode = fc.`-car_code` AND sc.`-car_code` = mcode1 
+AND scode1 = sc.`-car_code` AND x.name = x1.name AND y.name = y1.name 
+AND fc.name != sc.name AND fc.name  < sc.name;
+
+--Duration of all jobs: 0.345 sec

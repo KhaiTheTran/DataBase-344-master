@@ -1,0 +1,33 @@
+SELECT y.name AS country, y.population AS population, 
+(CASE WHEN is_array(y.religions) 
+THEN array_count(y.religions) 
+WHEN is_missing(y.religions) 
+THEN 0 ELSE 1 END) num_religions 
+FROM hw5.world x, x.mondial.country y
+ORDER BY y.name;
+
+
+--Duration of all jobs: 0.459 sec
+--Result Size: 238 rows
+-- First 20 rows:
+/*{ "num_religions": 1, "country": "Afghanistan", "population": "22664136" }
+{ "num_religions": 3, "country": "Albania", "population": "3249136" }
+{ "num_religions": 3, "country": "Algeria", "population": "29183032" }
+{ "num_religions": 3, "country": "American Samoa", "population": "65628" }
+{ "num_religions": 1, "country": "Andorra", "population": "72766" }
+{ "num_religions": 2, "country": "Angola", "population": "10342899" }
+{ "num_religions": 4, "country": "Anguilla", "population": "14436" }
+{ "num_religions": 0, "country": "Antigua and Barbuda", "population": "65647" }
+{ "num_religions": 3, "country": "Argentina", "population": "34672997" }
+{ "num_religions": 1, "country": "Armenia", "population": "3463574" }
+{ "num_religions": 2, "country": "Aruba", "population": "103065" }
+{ "num_religions": 3, "country": "Australia", "population": "18260863" }
+{ "num_religions": 2, "country": "Austria", "population": "8023244" }
+{ "num_religions": 2, "country": "Azerbaijan", "population": "7676953" }
+{ "num_religions": 6, "country": "Bahamas", "population": "259367" }
+{ "num_religions": 1, "country": "Bahrain", "population": "590042" }
+{ "num_religions": 2, "country": "Bangladesh", "population": "123062800" }
+{ "num_religions": 2, "country": "Barbados", "population": "257030" }
+{ "num_religions": 1, "country": "Belarus", "population": "10415973" }
+{ "num_religions": 2, "country": "Belgium", "population": "10170241" }
+*/
